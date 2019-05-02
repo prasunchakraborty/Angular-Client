@@ -1,12 +1,15 @@
 <mat-card>
-    <mat-form-field class="example-full-width">    
-    <textarea matInput [(ngModel)]="currentText" ></textarea>
+    <mat-form-field>
+        <input matInput [(ngModel)]= "enteredTitle">
     </mat-form-field>
-    <button 
-     mat-raised-button
-    color= "primary"
-    (click)="onAddPost()">Submit</button>
+    <mat-form-field >    
+        <textarea matInput [(ngModel)]="enteredContent" ></textarea>
+    </mat-form-field>
+        <button 
+        mat-raised-button
+        color= "primary"
+        (click)="onAddPost()">Submit</button>
 </mat-card>
 
 
-<p>{{newPost}}</p>
+
